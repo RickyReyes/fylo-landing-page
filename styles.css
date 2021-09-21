@@ -311,7 +311,7 @@ blockquote .person-container .name-and-title .title {
 footer {
   background-color: var(--very-dark-blue);
   color: white;
-  padding: 4rem 2.5rem;
+  padding: 4rem 2.5rem 3rem;
 }
 
 footer .footer-logo {
@@ -352,6 +352,23 @@ footer ul li {
 }
 
 footer ul + ul {
-  margin-top: 2.5rem;
+  margin: 2.5rem 0 3rem;
+}
+
+footer .footer-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: .75em;
+}
+
+footer .footer-icon-container .footer-icon {
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
