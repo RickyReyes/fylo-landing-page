@@ -261,11 +261,12 @@ blockquote {
 footer {
     background-color: var(--very-dark-blue);
     color: white;
-    padding: 4rem 2.5rem;
+    padding: 4rem 2.5rem 3rem;
     .footer-logo {
         scale: 1.15;
         color: white;
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(6deg) brightness(101%) contrast(101%);
+        // don't know why filter property is not working on entire svg.
         padding-bottom: 2rem;
     }
     .footer-container {
@@ -290,6 +291,17 @@ footer {
         }
     }
     ul + ul {
-        margin-top: 2.5rem;
+        margin: 2.5rem 0 3rem;
+    }
+    .footer-icon-container {
+        display: flex;
+        justify-content: center;
+        gap: .75em;
+        .footer-icon {
+            width: 25px;
+            height: 25px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }  // icons not included in files! 
     }
 }
