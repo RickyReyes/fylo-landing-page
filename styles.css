@@ -143,10 +143,11 @@ main .illustration-2 {
 main h2 {
   text-align: center;
   background-color: var(--light-grayish-blue);
-  font-size: 1rem;
+  font-size: .95rem;
+  letter-spacing: .4px;
   font-family: var(--body-font);
   font-weight: 600;
-  padding-bottom: .5rem;
+  padding: 3.75rem 0 .5rem;
 }
 
 main .p-2 {
@@ -155,6 +156,7 @@ main .p-2 {
   background-color: var(--light-grayish-blue);
   padding: 1rem 1.2rem 0;
   text-align: left;
+  line-height: 1.4;
 }
 
 main .green-link-container {
@@ -170,7 +172,7 @@ main .green-link-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2rem 0;
+  margin-top: 2.5rem;
 }
 
 main .green-link-container .green-link {
@@ -190,7 +192,7 @@ blockquote {
   font-family: var(--body-font);
   background-color: white;
   max-width: 450px;
-  margin: 0 2.5rem 5rem;
+  margin: 2.5rem 2.5rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,10 +290,11 @@ blockquote .person-container .name-and-title .title {
 }
 
 .early-access input {
-  font-family: var(--heading-font);
+  font-family: var(--body-font);
   font-weight: 400;
   color: var(--light-gray);
   margin-bottom: .5rem;
+  padding-left: 1em;
 }
 
 .early-access .btn-2 {
@@ -302,7 +305,7 @@ blockquote .person-container .name-and-title .title {
           transform: translateX(-50%);
   background-color: var(--bright-blue);
   color: white;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 footer {
@@ -323,26 +326,32 @@ footer .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .footer-container + .footer-container {
-  padding-top: 1.25rem;
-}
-
-footer .fylo-email,
-footer .fylo-phone {
-  padding-left: 1rem;
+  padding: 1.25rem 0 2rem;
 }
 
 footer .footer-icon {
   height: 50%;
-  float: right;
   -ms-grid-column-align: center;
       justify-self: center;
+  padding-right: 1rem;
 }
 
 footer ul {
   list-style-type: none;
-  padding: 3.5rem 0;
+  padding-top: 3.5rem 0;
+}
+
+footer ul li {
+  padding-top: 1rem;
+}
+
+footer ul + ul {
+  margin-top: 2.5rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -126,10 +126,11 @@ main {
     h2 {
         text-align: center;
         background-color: var(--light-grayish-blue);
-        font-size: 1rem;
+        font-size: .95rem;
+        letter-spacing: .4px;
         font-family: var(--body-font);
         font-weight: 600;
-        padding-bottom: .5rem;
+        padding: 3.75rem 0 .5rem;
     }
     .p-2 {
         color: grey;
@@ -137,6 +138,7 @@ main {
         background-color: var(--light-grayish-blue);
         padding: 1rem 1.2rem 0;
         text-align: left;
+        line-height: 1.4;
     }
     
     .green-link-container {
@@ -147,7 +149,7 @@ main {
         border-bottom: 1px solid var(--moderate-cyan);
         display: flex;
         justify-content: space-between;
-        margin: 2rem 0;
+        margin-top: 2.5rem;
         .green-link {
             position: relative;
             color: var(--moderate-cyan);
@@ -165,7 +167,7 @@ blockquote {
     font-family: var(--body-font);
     background-color: white;
     max-width: 450px;
-    margin: 0 2.5rem 5rem;
+    margin: 2.5rem 2.5rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,10 +240,11 @@ blockquote {
         font-size: .6rem;
     }
     input {
-        font-family: var(--heading-font);
+        font-family: var(--body-font);
         font-weight: 400;
         color: var(--light-gray);
         margin-bottom: .5rem;
+        padding-left: 1em;
     }
     .btn-2 {
         background-color: var(--bright-blue);
@@ -250,8 +253,7 @@ blockquote {
         transform: translateX(-50%);
         background-color: var(--bright-blue);
         color: white;
-        font-weight: 700;
-        
+        font-weight: 400;
     }
 
 }
@@ -268,20 +270,26 @@ footer {
     }
     .footer-container {
         display: flex;
+        align-items: center;
     }
+
     .footer-container + .footer-container {
-        padding-top: 1.25rem;
-    }
-    .fylo-email,
-    .fylo-phone {
-        padding-left: 1rem;
-    }
+        padding: 1.25rem 0 2rem;
+    }  // targets only email div
+
     .footer-icon {
         height: 50%;
         justify-self: center;
+        padding-right: 1rem;
     }
     ul {
         list-style-type: none;
-        padding: 3.5rem 0;
+        padding-top: 3.5rem 0;
+        li {
+            padding-top: 1rem;
+        }
+    }
+    ul + ul {
+        margin-top: 2.5rem;
     }
 }
