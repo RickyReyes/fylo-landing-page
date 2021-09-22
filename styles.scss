@@ -341,7 +341,7 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
         height: auto;
-        margin: 2r 5rem 2rem;
+        margin: 2rem 5rem 2rem;
     }
     .hero-flex-left {
         order: -1;
@@ -384,7 +384,25 @@ footer {
             width: 100%;
         }
     }
-    .illustration-2 {
-        padding: 0;
+
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        height: auto;
+        margin: 2rem 5rem 2rem;
+        align-items: center;
+        .aside-left {
+            order: -1;
+            h2 {
+                text-align: left;
+            }
+            p {
+                padding: 0;
+            }
+        }
+        .illustration-2 {
+            padding: 0;
+        }
     }
 }
