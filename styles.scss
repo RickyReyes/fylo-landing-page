@@ -57,7 +57,7 @@ main {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        width: 85%;
+        width: 90%;
         height: auto;
         margin-top: 4.5rem;
     }
@@ -85,6 +85,16 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        input {
+            width: 82%;
+            padding: .75rem 1.4rem;
+            margin: 2rem 0 1rem;
+            border: .9px solid black;
+            border-radius: 3px;
+            font-family: var(--body-font);
+            color: var(--light-gray);
+            font-size: .8rem;
+        }
         .btn {
             width: 83%;
             background-color: var(--bright-blue);
@@ -97,16 +107,6 @@ main {
             font-weight: 700;
             border-radius: 3px;
             box-shadow: 0px 2px 6px var(--light-gray);
-        }
-        input {
-            width: 82%;
-            padding: .75rem 1.4rem;
-            margin: 2rem 0 1rem;
-            border: .9px solid black;
-            border-radius: 3px;
-            font-family: var(--body-font);
-            color: var(--light-gray);
-            font-size: .8rem;
         }
     }
 
@@ -318,16 +318,6 @@ footer {
 // DESKTOP 
 
 @media (min-width: 900px) {
-    body {
-        margin: 4rem 5rem;
-    }
-
-    .nav-flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 3.5rem;
-    }
     .header-logo {
         position: relative;
         -webkit-transform: scale(1);
@@ -335,14 +325,23 @@ footer {
         left: 0;
         top: 0;
     }
-
+    .nav-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 4rem 5rem 0;
+    }
     .nav {
         padding: 0;
+        font-size: 1.1rem;
+        gap: 3rem;
     }
     .hero-flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
+        height: auto;
+        margin: 2r 5rem 2rem;
     }
     .hero-flex-left {
         order: -1;
@@ -353,18 +352,21 @@ footer {
         h1 {
             text-align: left;
             font-weight: 700;
-            font-size: 2.25rem;
+            font-size: 2.5rem;
             padding: 0;
         }
         p {
             text-align: left;
             padding: 1.5rem 0;
-            max-width: 500px;
+            max-width: 35rem;
+            align-self: flex-start;
+            font-size: 1.1rem;
         }
         .header-form {
             display: grid;
-            grid-template-columns: 65% 35%;
+            grid-template-columns: 60% 40%;
             grid-gap: 1rem;
+            max-width: 32.5rem;
             input {
                 margin: 0;
                 width: auto;
@@ -377,7 +379,12 @@ footer {
     }
 
     .hero-flex-right {
-        border: 1px solid red;
         align-self: center;
+        .illustration-2 {
+            width: 100%;
+        }
+    }
+    .illustration-2 {
+        padding: 0;
     }
 }
