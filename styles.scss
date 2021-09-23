@@ -69,13 +69,13 @@ main {
         width: 100%;
         text-align: center;
         align-self: center;
-        padding: 2.2rem 0 1.6rem;
+        padding: 2.2rem .75rem 1.6rem;
         line-height: 1.4;
     }
     .first-p {
         align-self: center;
         text-align: center;
-        font-size: .9rem;
+        font-size: 1rem;
         padding: 0 2rem;
         font-weight: 400;
         line-height: 1.5;
@@ -136,8 +136,8 @@ main {
         padding: 3.75rem 0 .5rem;
     }
     .p-2 {
-        color: grey;
-        font-size: .9rem;
+        color: var(--very-dark-blue);
+        font-size: 1rem;
         background-color: var(--light-grayish-blue);
         padding: 1rem 1.2rem 0;
         text-align: left;
@@ -166,6 +166,11 @@ main {
         }
     }
 } // end main 
+
+.aside-left {
+    display: flex;
+    flex-direction: column;
+} // to center green link. (aside-left is a desktop utility class)
 
 .blockquote-container {
     display: flex;
@@ -229,7 +234,9 @@ blockquote {
     color: white;
     text-align: center;
     padding: 3.5rem 2.75rem 4.5rem;
-    h3 {
+    display: flex;
+    flex-direction: column;
+    h3 { // "Get early access today"
         font-family: var(--body-font);
         font-weight: 700;
         font-size: 1.1rem;
@@ -257,14 +264,12 @@ blockquote {
     }
     .btn-2 {
         background-color: var(--bright-blue);
+        color: white;
+        font-weight: 400;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        background-color: var(--bright-blue);
-        color: white;
-        font-weight: 400;
     }
-
 }
 
 footer {
@@ -272,18 +277,17 @@ footer {
     color: white;
     padding: 4rem 2.5rem 3rem;
     .footer-logo {
-        scale: 1.15;
         color: white;
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(6deg) brightness(101%) contrast(101%);
         // don't know why filter property is not working on entire svg.
         padding-bottom: 2rem;
     }
-    .footer-container {
+    .contact-container {
         display: flex;
         align-items: center;
     }
 
-    .footer-container + .footer-container {
+    .contact-container + .contact-container {
         padding: 1.25rem 0 2rem;
     }  // targets only email div
 
@@ -294,7 +298,6 @@ footer {
     }
     ul {
         list-style-type: none;
-        padding-top: 3.5rem 0;
         li {
             padding-top: 1rem;
         }
@@ -302,11 +305,11 @@ footer {
     ul + ul {
         margin: 2.5rem 0 3rem;
     }
-    .footer-icon-container {
+    .social-icon-container {
         display: flex;
         justify-content: center;
         gap: .75em;
-        .footer-icon {
+        .social-icon {
             width: 25px;
             height: 25px;
             border: 1px solid white;
@@ -352,7 +355,7 @@ footer {
         h1 {
             text-align: left;
             font-weight: 700;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             padding: 0;
         }
         p {
@@ -390,19 +393,99 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
         height: auto;
-        margin: 2rem 5rem 2rem;
+        margin: 0 5rem 2rem;
         align-items: center;
         .aside-left {
             order: -1;
             h2 {
                 text-align: left;
+                font-size: 2.3rem;
+                padding-top: 0;
+            } 
+            .p-2 {
+                padding-left: 0;
+                font-size: 1rem;
             }
-            p {
-                padding: 0;
+            .blockquote-container {
+                justify-content: left;
+            }
+            blockquote {
+                margin-left: 0;
+                margin-right: 0;
+                p {
+                    font-family: var(--heading-font);
+                    color: var(--very-dark-blue);
+                    font-size: .75rem;
+                    max-width: 17rem;
+                }
+            }
+            .green-link-container {
+                align-self: flex-start;
+                margin-top: 1rem;
             }
         }
         .illustration-2 {
             padding: 0;
+        }
+    } // end aside
+
+    .early-access {
+       display: grid;
+       grid-template-columns: 60% 40%;
+       padding: 6.5rem 5rem 4rem;
+       gap: 2rem;
+       .early-access-flex-left {
+           text-align: left;
+           h3 {
+               font-size: 2rem;
+           }
+           p {
+               max-width: 32rem;
+               font-size: 1rem;
+           }
+       }
+       .early-access-flex-right {
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           input, .btn-2 {
+                padding: 1rem 1.5rem;
+                font-size: .8rem;
+           }
+           input {
+               margin-bottom: 1rem;
+           }
+           .btn-2 {
+               margin: 0;
+               max-width: 200px;
+               font-weight: 700;
+           }
+       }
+    }
+
+    footer {
+        padding: 12rem 5rem 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        padding-right: 20%;
+        .footer-logo {
+            position: absolute;
+            top: 7rem;
+            left: 0rem;
+        }
+        ul:nth-of-type(2) {
+            margin-top: 0;
+        }
+        li:first-child {
+            padding-top: 0;
+        }
+        .social-icon-container {
+            .social-icon {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }

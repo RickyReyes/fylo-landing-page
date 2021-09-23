@@ -74,7 +74,7 @@ main h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 2.2rem 0 1.6rem;
+  padding: 2.2rem .75rem 1.6rem;
   line-height: 1.4;
 }
 
@@ -83,7 +83,7 @@ main .first-p {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  font-size: .9rem;
+  font-size: 1rem;
   padding: 0 2rem;
   font-weight: 400;
   line-height: 1.5;
@@ -162,8 +162,8 @@ main h2 {
 }
 
 main .p-2 {
-  color: grey;
-  font-size: .9rem;
+  color: var(--very-dark-blue);
+  font-size: 1rem;
   background-color: var(--light-grayish-blue);
   padding: 1rem 1.2rem 0;
   text-align: left;
@@ -198,6 +198,16 @@ main .green-link-container .green-link .arrow {
   display: inline;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.aside-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blockquote-container {
@@ -286,6 +296,13 @@ blockquote .person-container .name-and-title .title {
   color: white;
   text-align: center;
   padding: 3.5rem 2.75rem 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .early-access h3 {
@@ -320,13 +337,12 @@ blockquote .person-container .name-and-title .title {
 
 .early-access .btn-2 {
   background-color: var(--bright-blue);
+  color: white;
+  font-weight: 400;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: var(--bright-blue);
-  color: white;
-  font-weight: 400;
 }
 
 footer {
@@ -343,7 +359,7 @@ footer .footer-logo {
   padding-bottom: 2rem;
 }
 
-footer .footer-container {
+footer .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,7 +368,7 @@ footer .footer-container {
           align-items: center;
 }
 
-footer .footer-container + .footer-container {
+footer .contact-container + .contact-container {
   padding: 1.25rem 0 2rem;
 }
 
@@ -365,7 +381,6 @@ footer .footer-icon {
 
 footer ul {
   list-style-type: none;
-  padding-top: 3.5rem 0;
 }
 
 footer ul li {
@@ -376,7 +391,7 @@ footer ul + ul {
   margin: 2.5rem 0 3rem;
 }
 
-footer .footer-icon-container {
+footer .social-icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +401,7 @@ footer .footer-icon-container {
   gap: .75em;
 }
 
-footer .footer-icon-container .footer-icon {
+footer .social-icon-container .social-icon {
   width: 25px;
   height: 25px;
   border: 1px solid white;
@@ -445,7 +460,7 @@ footer .footer-icon-container .footer-icon {
   .hero-flex-left h1 {
     text-align: left;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding: 0;
   }
   .hero-flex-left p {
@@ -487,7 +502,7 @@ footer .footer-icon-container .footer-icon {
         grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
     height: auto;
-    margin: 2rem 5rem 2rem;
+    margin: 0 5rem 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -499,12 +514,106 @@ footer .footer-icon-container .footer-icon {
   }
   aside .aside-left h2 {
     text-align: left;
+    font-size: 2.3rem;
+    padding-top: 0;
   }
-  aside .aside-left p {
-    padding: 0;
+  aside .aside-left .p-2 {
+    padding-left: 0;
+    font-size: 1rem;
+  }
+  aside .aside-left .blockquote-container {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  aside .aside-left blockquote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  aside .aside-left blockquote p {
+    font-family: var(--heading-font);
+    color: var(--very-dark-blue);
+    font-size: .75rem;
+    max-width: 17rem;
+  }
+  aside .aside-left .green-link-container {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 1rem;
   }
   aside .illustration-2 {
     padding: 0;
+  }
+  .early-access {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    padding: 6.5rem 5rem 4rem;
+    gap: 2rem;
+  }
+  .early-access .early-access-flex-left {
+    text-align: left;
+  }
+  .early-access .early-access-flex-left h3 {
+    font-size: 2rem;
+  }
+  .early-access .early-access-flex-left p {
+    max-width: 32rem;
+    font-size: 1rem;
+  }
+  .early-access .early-access-flex-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .early-access .early-access-flex-right input, .early-access .early-access-flex-right .btn-2 {
+    padding: 1rem 1.5rem;
+    font-size: .8rem;
+  }
+  .early-access .early-access-flex-right input {
+    margin-bottom: 1rem;
+  }
+  .early-access .early-access-flex-right .btn-2 {
+    margin: 0;
+    max-width: 200px;
+    font-weight: 700;
+  }
+  footer {
+    padding: 12rem 5rem 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    padding-right: 20%;
+  }
+  footer .footer-logo {
+    position: absolute;
+    top: 7rem;
+    left: 5rem;
+  }
+  footer ul:nth-of-type(2) {
+    margin-top: 0;
+  }
+  footer li:first-child {
+    padding-top: 0;
+  }
+  footer .social-icon-container .social-icon {
+    width: 30px;
+    height: 30px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
