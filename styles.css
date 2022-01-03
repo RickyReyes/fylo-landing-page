@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&:wght@400;700display=swap");
 :root {
-  --heading-font: 'Open Sans', sans-serif;
-  --body-font: 'Raleway', sans-serif;
+  --heading-font: "Open Sans", sans-serif;
+  --body-font: "Raleway", sans-serif;
   --very-dark-blue: hsl(243, 87%, 12%);
   --desaturated-blue: hsl(238, 22%, 44%);
   --bright-blue: hsl(224, 93%, 58%);
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-flex {
@@ -88,7 +88,7 @@ main h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 2.2rem .75rem 1.6rem;
+  padding: 2.2rem 0.75rem 1.6rem;
   line-height: 1.4;
 }
 
@@ -118,12 +118,12 @@ main .header-form {
 
 main .header-form input {
   width: 82%;
-  padding: .75rem 1.4rem;
-  margin: 2rem 0 1rem;
-  border: .9px solid black;
+  padding: 0.75rem 1.4rem;
+  margin: 2rem 0 .5rem;
+  border: 0.9px solid black;
   border-radius: 3px;
   font-family: var(--body-font);
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: var(--desaturated-blue);
 }
 
@@ -143,20 +143,39 @@ main .header-form input::placeholder {
   color: var(--light-gray);
 }
 
-main .header-form .btn {
+main .header-form .hero-btn {
   width: 83%;
   background-color: var(--bright-blue);
   color: white;
   text-align: center;
-  padding: .7rem 1.4rem;
-  margin: .1rem 0 1rem;
+  padding: 0.7rem 1.4rem;
+  margin: 0.1rem 0 1rem;
   font-family: var(--body-font);
-  font-size: .825rem;
+  font-size: 0.825rem;
   font-weight: 700;
+  border: 0;
   border-radius: 3px;
   -webkit-box-shadow: 0px 2px 6px var(--light-gray);
           box-shadow: 0px 2px 6px var(--light-gray);
   cursor: pointer;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+main .header-form .btn:hover {
+  background-color: #4a76ee;
+}
+
+main .header-form .bad-email {
+  color: red;
+  font-size: 0.8rem;
+  width: 81%;
+  padding-bottom: .5rem;
+  text-align: left;
 }
 
 main .curve {
@@ -185,11 +204,11 @@ main .illustration-2 {
 main h2 {
   text-align: center;
   background-color: var(--light-grayish-blue);
-  font-size: .95rem;
-  letter-spacing: .4px;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
   font-family: var(--body-font);
   font-weight: 600;
-  padding: 3.75rem 0 .5rem;
+  padding: 3.75rem 0 0.5rem;
 }
 
 main .p-2 {
@@ -207,7 +226,7 @@ main .green-link-container {
   -ms-flex-item-align: center;
       align-self: center;
   width: 135px;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
   border-bottom: 1px solid var(--moderate-cyan);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +241,7 @@ main .green-link-container {
 main .green-link-container .green-link {
   position: relative;
   color: var(--moderate-cyan);
-  font-size: .75rem;
+  font-size: 0.75rem;
   display: inline-block;
 }
 
@@ -270,7 +289,7 @@ blockquote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   border-radius: 2px;
   -webkit-box-shadow: 0 0 10px 0.01px var(--light-gray);
           box-shadow: 0 0 10px 0.01px var(--light-gray);
@@ -281,15 +300,15 @@ blockquote .quotes {
   position: absolute;
   top: 1.25rem;
   left: 1.5rem;
-  scale: .8;
+  scale: 0.8;
 }
 
 blockquote .quote-p {
   text-align: left;
-  font-size: .63rem;
+  font-size: 0.63rem;
   width: 100%;
   line-height: 1.75;
-  padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
 }
 
 blockquote .quote-img {
@@ -308,17 +327,17 @@ blockquote .person-container {
 }
 
 blockquote .person-container .name-and-title {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 blockquote .person-container .name-and-title .name {
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-weight: 700;
-  padding-bottom: .125rem;
+  padding-bottom: 0.125rem;
 }
 
 blockquote .person-container .name-and-title .title {
-  font-size: .4rem;
+  font-size: 0.4rem;
 }
 
 .early-access {
@@ -345,18 +364,19 @@ blockquote .person-container .name-and-title .title {
 }
 
 .early-access p {
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 400;
   padding-bottom: 1.3rem;
   line-height: 1.6;
 }
 
-.early-access input, .early-access .btn-2 {
+.early-access input,
+.early-access .early-access-btn {
   width: 85%;
   border: 0;
   border-radius: 3px;
-  padding: .6rem .25rem;
-  font-size: .6rem;
+  padding: 0.6rem 0.25rem;
+  font-size: 0.6rem;
   -webkit-box-shadow: 2px 2px 5px rgba(46, 46, 71, 0.7);
           box-shadow: 2px 2px 5px rgba(46, 46, 71, 0.7);
 }
@@ -365,7 +385,7 @@ blockquote .person-container .name-and-title .title {
   font-family: var(--body-font);
   font-weight: 400;
   color: var(--light-gray);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   padding-left: 1em;
 }
 
@@ -389,7 +409,7 @@ blockquote .person-container .name-and-title .title {
   color: var(--light-gray);
 }
 
-.early-access .early-access-flex-right .btn-2 {
+.early-access .early-access-flex-right .early-access-btn {
   background-color: var(--bright-blue);
   color: white;
   font-weight: 400;
@@ -398,6 +418,10 @@ blockquote .person-container .name-and-title .title {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   cursor: pointer;
+}
+
+.early-access .early-access-flex-right .btn:hover {
+  background-color: #4a76ee;
 }
 
 footer {
@@ -455,7 +479,7 @@ footer .social-icon-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: .75em;
+  gap: 0.75em;
 }
 
 footer .social-icon-container .social-icon {
@@ -522,14 +546,14 @@ footer .social-icon-container .social-icon {
     display: grid;
     -ms-grid-columns: 60% 40%;
         grid-template-columns: 60% 40%;
-    grid-gap: 1rem;
+    grid-gap: 0.4rem 1rem;
     max-width: 32.5rem;
   }
   .hero-flex-left .header-form input {
     margin: 0;
     width: auto;
   }
-  .hero-flex-left .header-form .btn {
+  .hero-flex-left .header-form .hero-btn {
     margin: 0;
     width: auto;
   }
@@ -579,7 +603,7 @@ footer .social-icon-container .social-icon {
   aside .aside-left blockquote p {
     font-family: var(--heading-font);
     color: var(--very-dark-blue);
-    font-size: .75rem;
+    font-size: 0.75rem;
     max-width: 17rem;
   }
   aside .aside-left .green-link-container {
@@ -620,14 +644,12 @@ footer .social-icon-container .social-icon {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .early-access .early-access-flex-right input, .early-access .early-access-flex-right .btn-2 {
+  .early-access .early-access-flex-right input,
+  .early-access .early-access-flex-right .early-access-btn {
     padding: 1rem 1.5rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  .early-access .early-access-flex-right input {
-    margin-bottom: 1rem;
-  }
-  .early-access .early-access-flex-right .btn-2 {
+  .early-access .early-access-flex-right .early-access-btn {
     margin: 0;
     max-width: 200px;
     font-weight: 700;
@@ -635,6 +657,12 @@ footer .social-icon-container .social-icon {
     left: 0%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  .early-access .early-access-flex-right .bad-early-access-email {
+    font-weight: 300;
+    font-size: .85rem;
+    text-align: left;
+    padding-bottom: .75rem;
   }
   footer {
     padding: 12rem 5rem 5rem;

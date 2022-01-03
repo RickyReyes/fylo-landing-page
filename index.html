@@ -32,9 +32,10 @@
             family, and co-workers.
           </p>
     
-          <form class="header-form" action="">
-            <input herotype="text" placeholder="Enter your email...">
-            <div class="btn">Get Started</div>
+          <form class="header-form">
+            <input type="email" placeholder="Enter your email..." id="hero-email" />
+            <div class="bad-email"></div>
+            <button class="hero-btn btn" for="hero-email">Get Started</button>
           </form>
         </div>
       </header>
@@ -79,9 +80,10 @@
           It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
         </p>
       </div>
-      <form action="" class="early-access-flex-right">
-        <input type="text" placeholder="email@example.com">
-        <div class="btn-2">Get Started For Free</div>
+      <form action="submit" class="early-access-flex-right">
+        <input class="early-access-email" type="email" placeholder="email@example.com">
+        <div class="bad-early-access-email"></div>
+        <div class="early-access-btn btn" disabled>Get Started For Free</div>
       </form>
     </div>
 
@@ -109,10 +111,11 @@
         <li>Privacy</li>
       </ul>
       <div class="social-icon-container">
-        <div class="social-icon"></div>
-        <div class="social-icon"></div>
-        <div class="social-icon"></div>
+        <button class="social-icon"></button>
+        <button class="social-icon"></button>
+        <button class="social-icon"></button>
       </div>
     </footer>
   </body>
+  <script src="main.js"></script>
 </html>
