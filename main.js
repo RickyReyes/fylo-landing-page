@@ -19,6 +19,7 @@ earlyAccessInput.addEventListener("input", checkEarlyAccessEmail);
 
 function checkHeroEmail(e) {
 	let email = e.target.value;
+	console.log(email);
 	if (!validateEmail(email)) {
 		heroInput.style.border = "1px solid red";
 		badHeroEmail.innerText = 'Please check your email'
@@ -26,7 +27,12 @@ function checkHeroEmail(e) {
 		heroInput.style.border = "0.9px solid black";
 		badHeroEmail.innerText = ''
     }
+	if (email === '') {
+		heroInput.style.border = "0.9px solid black";
+		badHeroEmail.innerText = ''
+	}
 }
+
 function checkEarlyAccessEmail(e) {
     let email = e.target.value;
     if (!validateEmail(email)) {
@@ -36,4 +42,8 @@ function checkEarlyAccessEmail(e) {
 		earlyAccessInput.style.border = "0.9px solid black";
 		badEarlyAccessEmail.innerText = ''
     }
+	if (email === '') {
+		earlyAccessInput.style.border = "0.9px solid black";
+		badEarlyAccessEmail.innerText = ''
+	}
 }

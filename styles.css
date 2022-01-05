@@ -251,6 +251,14 @@ main .green-link-container .green-link .arrow {
       justify-self: center;
 }
 
+main .green-link-container:hover {
+  border-bottom: 1px solid #53dfc8;
+}
+
+main .green-link-container:hover .green-link {
+  color: #53dfc8;
+}
+
 .aside-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,23 +378,31 @@ blockquote .person-container .name-and-title .title {
   line-height: 1.6;
 }
 
-.early-access input,
-.early-access .early-access-btn {
-  width: 85%;
+.early-access .early-access-flex-right {
+  margin: 0 5%;
+}
+
+.early-access .early-access-flex-right input,
+.early-access .early-access-flex-right .early-access-btn {
+  width: 100%;
   border: 0;
   border-radius: 3px;
   padding: 0.6rem 0.25rem;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   -webkit-box-shadow: 2px 2px 5px rgba(46, 46, 71, 0.7);
           box-shadow: 2px 2px 5px rgba(46, 46, 71, 0.7);
 }
 
-.early-access input {
+.early-access .early-access-flex-right input {
   font-family: var(--body-font);
   font-weight: 400;
   color: var(--light-gray);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   padding-left: 1em;
+}
+
+.early-access .early-access-flex-right > * {
+  width: 100%;
 }
 
 .early-access .early-access-flex-right input {
@@ -418,6 +434,13 @@ blockquote .person-container .name-and-title .title {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   cursor: pointer;
+}
+
+.early-access .early-access-flex-right .bad-early-access-email {
+  font-size: .7rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: .5rem;
 }
 
 .early-access .early-access-flex-right .btn:hover {
@@ -466,6 +489,10 @@ footer ul {
 footer ul li {
   padding-top: 1rem;
   cursor: pointer;
+}
+
+footer ul li:hover {
+  color: #585989;
 }
 
 footer ul + ul {
@@ -662,7 +689,6 @@ footer .social-icon-container .social-icon {
     font-weight: 300;
     font-size: .85rem;
     text-align: left;
-    padding-bottom: .75rem;
   }
   footer {
     padding: 12rem 5rem 5rem;
@@ -680,7 +706,7 @@ footer .social-icon-container .social-icon {
   }
   footer .logo-and-contact {
     position: relative;
-    bottom: 5.22rem;
+    bottom: 5.4rem;
   }
   footer ul:nth-of-type(2) {
     margin-top: 0;

@@ -187,6 +187,12 @@ main {
 			}
 		}
 	}
+	.green-link-container:hover {
+		border-bottom: 1px solid hsl(170, 69%, 60%);
+	}
+	.green-link-container:hover .green-link {
+		color:hsl(170, 69%, 60%);
+	}
 } // end main
 
 .aside-left {
@@ -271,23 +277,28 @@ blockquote {
 		padding-bottom: 1.3rem;
 		line-height: 1.6;
 	}
-	input,
-	.early-access-btn {
-		width: 85%;
-		border: 0;
-		border-radius: 3px;
-		padding: 0.6rem 0.25rem;
-		font-size: 0.6rem;
-		box-shadow: 2px 2px 5px hsla(240, 21%, 23%, 0.7);
-	}
-	input {
-		font-family: var(--body-font);
-		font-weight: 400;
-		color: var(--light-gray);
-		margin-bottom: 0.5rem;
-		padding-left: 1em;
-	}
 	.early-access-flex-right {
+		margin: 0 5%; 
+		input,
+		.early-access-btn {
+			width: 100%;
+			border: 0;
+			border-radius: 3px;
+			padding: 0.6rem 0.25rem;
+			font-size: 0.7rem;
+			box-shadow: 2px 2px 5px hsla(240, 21%, 23%, 0.7);
+		}
+		input {
+			font-family: var(--body-font);
+			font-weight: 400;
+			color: var(--light-gray);
+			margin-bottom: 0.3rem;
+			padding-left: 1em;
+		}
+		
+		> * { 
+			width: 100%;
+		}
 		input {
 			color: var(--desaturated-blue);
 		}
@@ -302,6 +313,12 @@ blockquote {
 			left: 50%;
 			transform: translateX(-50%);
 			cursor: pointer;
+		}
+		.bad-early-access-email {
+			font-size: .7rem;
+			font-weight: 400;
+			text-align: left;
+			margin-bottom: .5rem;
 		}
         .btn:hover {
             background-color: rgb(74, 118, 238)
@@ -341,6 +358,9 @@ footer {
 		li {
 			padding-top: 1rem;
 			cursor: pointer;
+		}
+		li:hover {
+			color:hsl(238, 22%, 44%);
 		}
 	}
 	ul + ul {
@@ -502,7 +522,6 @@ footer {
                 font-weight: 300;
                 font-size: .85rem;
                 text-align: left;
-                padding-bottom: .75rem;
             }
 		}
 	}
@@ -516,7 +535,7 @@ footer {
 		padding-right: 20%;
 		.logo-and-contact {
 			position: relative;
-			bottom: 5.22rem;
+			bottom: 5.4rem;
 		}
 		ul:nth-of-type(2) {
 			margin-top: 0;
