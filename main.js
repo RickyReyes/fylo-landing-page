@@ -10,7 +10,7 @@ function validateEmail(email) {
 const heroInput = document.getElementById("hero-email");
 const earlyAccessInput = document.querySelector(".early-access-email");
 const heroBtn = document.querySelector(".hero-btn");
-const badHeroEmail = document.querySelector(".bad-email");
+const badHeroEmail = document.querySelector(".bad-hero-email");
 const badEarlyAccessEmail = document.querySelector(".bad-early-access-email");
 
 
@@ -44,6 +44,6 @@ function checkEarlyAccessEmail(e) {
     }
 	if (email === '') {
 		earlyAccessInput.style.border = "0.9px solid black";
-		badEarlyAccessEmail.innerText = ''
+		earlyAccessEmail.innerText = ''
 	}
 }

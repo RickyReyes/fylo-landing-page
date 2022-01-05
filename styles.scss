@@ -92,7 +92,7 @@ main {
 		input {
 			width: 82%;
 			padding: 0.75rem 1.4rem;
-			margin: 2rem 0 .5rem;
+			margin: 2rem 0 .25rem;
 			border: 0.9px solid black;
 			border-radius: 3px;
 			font-family: var(--body-font);
@@ -122,7 +122,7 @@ main {
         .btn:hover {
             background-color: rgb(74, 118, 238)
         }
-		.bad-email {
+		.bad-hero-email {
 			color: red;
 			font-size: 0.8rem;
             width: 81%;
