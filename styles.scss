@@ -44,6 +44,9 @@ body {
 		padding: 1.8rem 1.5rem;
 		li {
 			cursor: pointer;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 	.header-logo {
@@ -89,10 +92,16 @@ main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		input {
+		.input-container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			position: relative;
+		}
+		.hero-email {
 			width: 82%;
 			padding: 0.75rem 1.4rem;
-			margin: 2rem 0 .25rem;
+			margin: 2rem 0 0;
 			border: 0.9px solid black;
 			border-radius: 3px;
 			font-family: var(--body-font);
@@ -102,13 +111,24 @@ main {
 		input::placeholder {
 			color: var(--light-gray);
 		}
+		.bad-hero-email {
+			color: red;
+			font-size: 0.8rem;
+			width: 81%;
+			text-align: left;
+			position: absolute;
+			bottom: -1.2rem;
+			left: 9%;
+			font-weight: initial;
+		}
+
 		.hero-btn {
 			width: 83%;
 			background-color: var(--bright-blue);
 			color: white;
 			text-align: center;
 			padding: 0.7rem 1.4rem;
-			margin: 0.1rem 0 1rem;
+			margin: 1.4rem 0 0;
 			font-family: var(--body-font);
 			font-size: 0.825rem;
 			font-weight: 700;
@@ -118,17 +138,12 @@ main {
 			cursor: pointer;
             grid-row: 1/2;
             grid-column: 2/3;
+
+			position: relative;
 		}
         .btn:hover {
             background-color: rgb(74, 118, 238)
         }
-		.bad-hero-email {
-			color: red;
-			font-size: 0.8rem;
-            width: 81%;
-            padding-bottom: .5rem;
-            text-align: left;
-		}
 	}
 
 	.curve {
@@ -184,7 +199,12 @@ main {
 			.arrow {
 				display: inline;
 				justify-self: center;
+				border: 1px solid red;
+				
 			}
+		}
+		&:hover .arrow {
+			filter: brightness(140%);
 		}
 	}
 	.green-link-container:hover {
@@ -343,6 +363,9 @@ footer {
 		align-items: center;
 		cursor: pointer;
 	}
+	.contact-item:hover .contact {
+		color:hsl(238, 22%, 44%);
+	}
 
 	.contact-item + .contact-item {
 		padding: 1.25rem 0 2rem;
@@ -383,7 +406,7 @@ footer {
 
 // DESKTOP
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
 	.nav-flex {
 		margin: 4rem 5rem 0;
 		.header-logo {
@@ -428,7 +451,10 @@ footer {
 			max-width: 32.5rem;
 			input {
 				margin: 0;
-				width: auto;
+				width: 100%;
+			}
+			.bad-hero-email {
+				left: 0;
 			}
 			.hero-btn {
 				margin: 0;
@@ -520,7 +546,7 @@ footer {
             
             .bad-early-access-email {
                 font-weight: 300;
-                font-size: .85rem;
+                font-size: .8rem;
                 text-align: left;
             }
 		}

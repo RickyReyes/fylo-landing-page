@@ -33,9 +33,13 @@
           </p>
     
           <form class="header-form">
-            <input type="email" placeholder="Enter your email..." id="hero-email" />
-            <div class="bad-hero-email"></div>
-            <button class="hero-btn btn" for="hero-email">Get Started</button>
+            <div class="input-container">
+              <input type="email" placeholder="Enter your email..." class="hero-email">
+              </input>
+              <span class="bad-hero-email"></span>
+            </div>
+          <button class="hero-btn btn" for="hero-email">Get Started</button>
+          <span class="bad-hero-email"></span>
           </form>
         </div>
       </header>
@@ -52,7 +56,7 @@
             <p class="p-2">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
             <div class="green-link-container">
               <div class="green-link">See how Fylo works </div>
-              <img src="/images/icon-arrow.svg" class="arrow" alt="arrow">
+              <img class="arrow" src="/images/icon-arrow.svg" alt="">
             </div>
             <div class="blockquote-container">
               <blockquote>
@@ -60,7 +64,7 @@
                 <p class="quote-p">Fylo has improved our team productivity by an order of magnitude. Since 
                   making the switch our team has become a well-oiled collaboration machine.</p>
                 <div class="person-container">
-                  <img class="quote-img" src="images/avatar-testimonial.jpg" alt="">
+                  <img class="quote-img" src="images/avatar-testimonial.jpg" alt="photo of person">
                   <div class="name-and-title">
                     <div class="name">Kyle Burton</div>
                     <div class="title">Founder & CEO, Huddle</div>
@@ -83,7 +87,7 @@
       <form action="submit" class="early-access-flex-right">
         <input class="early-access-email" type="email" placeholder="email@example.com">
         <div class="bad-early-access-email"></div>
-        <div class="early-access-btn btn" disabled>Get Started For Free</div>
+        <div class="early-access-btn btn">Get Started For Free</div>
       </form>
     </div>
 
@@ -92,11 +96,11 @@
         <img class="footer-logo" src="/images/logo.svg" alt="logo">
         <div class="contact-item">
           <img src="/images/icon-phone.svg" class="footer-icon" alt="">
-          <div class="fylo-phone">Phone: +1-543-123-4567</div>
+          <div class="contact fylo-phone">Phone: +1-543-123-4567</div>
         </div>
         <div class="contact-item">
           <img src="/images/icon-email.svg" class="footer-icon" alt="">
-          <div class="fylo-email">example@fylo.com</div>
+          <div class="contact fylo-email">example@fylo.com</div>
         </div>
       </div>
       <ul class="footer-nav">
