@@ -46,18 +46,21 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+First, I wrote the HTML while looking at both the mobile and desktop designs.
+- I started with mobile, but planned ahead for the desktop design, especially for any Flexbox or CSS Grid that I'd be using.
+
+Next, I layed out all the sections on the page using either Flexbox or Grid, deciding how the transition from mobile to desktop should look.
+
+Finally, I added some JavaScript for the email validations, and hover events on CSS.
+
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Sass
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
