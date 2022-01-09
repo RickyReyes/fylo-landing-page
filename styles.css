@@ -51,6 +51,7 @@ body {
 
 .nav-flex .nav li {
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .nav-flex .nav li:hover {
@@ -58,8 +59,9 @@ body {
 }
 
 .nav-flex .header-logo {
-  -webkit-transform: scale(0.5);
-  transform: scale(0.7);
+  width: 30vw;
+  max-width: 150px;
+  margin: .5rem 0 0 1.5rem;
   cursor: pointer;
 }
 
@@ -551,8 +553,8 @@ footer .social-icon-container .social-icon {
     margin: 4rem 5rem 0;
   }
   .nav-flex .header-logo {
-    -webkit-transform: scale(1.25) translateX(10%);
-            transform: scale(1.25) translateX(10%);
+    margin: 0;
+    max-width: 200px;
   }
   .nav-flex .nav {
     padding: 0;

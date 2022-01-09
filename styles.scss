@@ -44,14 +44,16 @@ body {
 		padding: 1.8rem 1.5rem;
 		li {
 			cursor: pointer;
+			white-space: nowrap;
 			&:hover {
 				text-decoration: underline;
 			}
 		}
 	}
 	.header-logo {
-		-webkit-transform: scale(0.5);
-		transform: scale(0.7);
+		width: 30vw;
+		max-width: 150px;
+		margin: .5rem 0 0 1.5rem;
 		cursor: pointer;
 	}
 }
@@ -403,14 +405,18 @@ footer {
 	}
 }
 
-
-// DESKTOP
+// ///////////////////////////////
+// ///////////////////////////////
+//     DESKTOP     ///////////////
+// ///////////////////////////////
+// ///////////////////////////////
 
 @media (min-width: 850px) {
 	.nav-flex {
 		margin: 4rem 5rem 0;
 		.header-logo {
-			transform: scale(1.25) translateX(10%);
+			margin: 0;
+			max-width: 200px;
 		}
 		.nav {
 			padding: 0;
