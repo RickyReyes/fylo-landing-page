@@ -13,7 +13,6 @@ const heroBtn = document.querySelector(".hero-btn");
 const badHeroEmail = document.querySelector(".bad-hero-email");
 const badEarlyAccessEmail = document.querySelector(".bad-early-access-email");
 
-
 heroInput.addEventListener("input", checkHeroEmail);
 earlyAccessInput.addEventListener("input", checkEarlyAccessEmail);
 
