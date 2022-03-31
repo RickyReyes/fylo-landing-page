@@ -177,7 +177,7 @@ main .header-form .hero-btn {
   color: white;
   text-align: center;
   padding: 0.7rem 1.4rem;
-  margin: 1.4rem 0 0;
+  margin: .9rem 0 0;
   font-family: var(--body-font);
   font-size: 0.825rem;
   font-weight: 700;
@@ -548,6 +548,7 @@ footer .social-icon-container .social-icon {
   cursor: pointer;
 }
 
+/* Desktop */
 @media (min-width: 850px) {
   .nav-flex {
     margin: 4rem 5rem 0;
